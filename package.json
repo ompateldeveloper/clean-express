@@ -1,0 +1,24 @@
+{
+  "name": "clean-express",
+  "version": "1.0.0",
+  "description": "clean folder structure for your express project",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && nodemon index.js",
+    "build":"tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.1.0",
+    "prisma": "^5.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.4",
+    "tsc-alias": "^1.8.10"
+  }
+}
