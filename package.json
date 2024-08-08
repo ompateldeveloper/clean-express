@@ -4,6 +4,9 @@
   "description": "clean folder structure for your express project",
   "main": "./dist/index.js",
   "type": "module",
+  "bin":{
+    "create-clean-express":"echo 'yahello' "
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
