@@ -1,28 +1,20 @@
 {
   "name": "clean-express",
-  "version": "0.1.0",
-  "description": "clean folder structure for your express project",
-  "main": "./dist/index.js",
+  "version": "0.4.0",
+  "main": "index.js",
   "type": "module",
-  "bin":{
-    "create-clean-express":"echo 'yahello' "
+  "bin": {
+    "create-clean-express": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon",
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Om Patel",
   "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^22.1.0",
-    "prisma": "^5.18.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.16.5",
-    "typescript": "^5.5.4"
-  },
+  "description": "Cleaner express project setup",
   "dependencies": {
-    "nodemon": "^3.1.4",
-    "tsc-alias": "^1.8.10"
+    "inquirer": "^10.1.8",
+    "shelljs": "^0.8.5"
   }
 }
