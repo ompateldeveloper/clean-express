@@ -1,4 +1,4 @@
-const formatMiddleware = (req, res, next) => {
+export const formatMiddleware = (req, res, next) => {
     res.apiSuccess = (data, message) => {
         res.status(200).json({
             status: true,
