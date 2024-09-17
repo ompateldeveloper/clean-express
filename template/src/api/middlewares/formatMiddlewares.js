@@ -1,5 +1,5 @@
-export const formatMiddleware = (req, res, next) => {
-    res.apiSuccess = (data, message) => {
+export const formatMiddleware = ({ req, res, next }) => {
+    res.apiSuccess = ({data, message}) => {
         res.status(200).json({
             status: true,
             message,
@@ -7,19 +7,19 @@ export const formatMiddleware = (req, res, next) => {
         });
     };
 
-    res.apiResponse = (data, status, message) => {
+    res.apiResponse = ({ data, status, message }) => {
         res.status(status).json({
             status: true,
             message,
-            data
+            data,
         });
     };
 
-    res.apiError = (error, status = 400,message) => {
+    res.apiError = ({ error, status = 400, message }) => {
         res.status(status).json({
             status: false,
             message,
-            data:error
+            error: error,
         });
     };
 

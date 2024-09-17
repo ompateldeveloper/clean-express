@@ -10,11 +10,11 @@ const DB_URL = process.env.DBURL || "";
 const SECRET = process.env.SECRET || "";
 
 const app = express();
-app.use(express.json())
+app.use(express.json());
 app.get("/", (req, res) => {
     res.send("Welcome to Clean Express 🚅...");
 });
-app.use(mainRouter)
+app.use("/api",mainRouter);
 app.listen(PORT, () => {
-    console.log("Server is Started ");
+    console.log("Server is Started on port " + PORT);
 });
